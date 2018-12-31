@@ -15,7 +15,6 @@ def lengthOfLongestSubstring(s):
             i = i - len(ans)
             ans = ""
         i += 1
-        
     return len(max(counts, key=counts.get))
 
 
