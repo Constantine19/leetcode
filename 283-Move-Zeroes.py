@@ -4,16 +4,19 @@ def moveZeros(nums):
         if nums[i] != 0:
             nums[count] = nums[i]
             count += 1
-    print nums
+    # print nums
 
     while count < len(nums):
         nums[count] = 0
         count += 1
 
-    print nums
+    # print nums
 
-nums = [0,1,0,3,12]
-moveZeros(nums)
+    return nums
+
+
+nums = [0, 0, 1]
+print moveZeros(nums)
 
 """
 Input: [0,1,0,3,12]
